@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Prizes from './Sections/Prizes';
+import CatchTheBee from './Sections/CatchTheBee';
+import Cursor from './Components/Cursor';
+import Team from './Sections/Team';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-checks relative min-w-screen min-h-screen flex flex-col overflow-x-clip">
+      
+      {/* Section 1:-  Prizes */}
+      <Prizes />
+
+      {/* catch the bee */}
+      <CatchTheBee />
+
+      {/* Team */}
+      <Team />
+
+      
+
     </div>
   );
 }
